@@ -8,6 +8,7 @@ public class BitapSearcher {
 
     private List<Long> indexes = new ArrayList<>();
 
+    /**Returns List of beginning indexes of words in source file "approximately equal" to a pattern**/
     public List<Long> search(String sourceName, String pattern, int maxMistakes) {
         try (Reader reader = openSource(sourceName)) {
             int c;
